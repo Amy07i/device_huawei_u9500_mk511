@@ -1,0 +1,18 @@
+
+project vendor/cm/
+diff --git a/vendor/cm/config/common.mk b/vendor/cm/config/common.mk
+index 7f24319..04fc7ae 100644
+--- a/vendor/cm/config/common.mk
++++ b/vendor/cm/config/common.mk
+@@ -250,11 +250,6 @@ ifndef CM_BUILDTYPE
+     endif
+ endif
+ 
+-# Filter out random types, so it'll reset to UNOFFICIAL
+-ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(CM_BUILDTYPE)),)
+-    CM_BUILDTYPE :=
+-endif
+-
+ ifdef CM_BUILDTYPE
+     ifneq ($(CM_BUILDTYPE), SNAPSHOT)
+         ifdef CM_EXTRAVERSION

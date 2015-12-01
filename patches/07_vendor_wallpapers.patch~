@@ -1,0 +1,29 @@
+
+project vendor/mk/
+diff --git a/vendor/mk/config/common_full.mk b/vendor/mk/config/common_full.mk
+index 5d12550..9d1e4e3 100644
+--- a/vendor/mk/config/common_full.mk
++++ b/vendor/mk/config/common_full.mk
+@@ -6,21 +6,10 @@ include vendor/mk/config/mk_audio.mk
+ 
+ # Optional MK packages
+ PRODUCT_PACKAGES += \
+-    Galaxy4 \
+-    HoloSpiralWallpaper \
+-    LiveWallpapers \
+-    LiveWallpapersPicker \
+-    MagicSmokeWallpapers \
+-    NoiseField \
+-    PhaseBeam \
+-    VisualizationWallpapers \
+-    PhotoTable \
+-    SoundRecorder \
+-    PhotoPhase
++    SoundRecorder
+ 
+ # Extra tools in MK
+ PRODUCT_PACKAGES += \
+-    vim \
+     zip \
+     unrar \
+     curl
